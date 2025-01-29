@@ -44,6 +44,12 @@ describe("Controller Function Tests", () => {
         genre: "Crime",
         director: "Francis Ford Coppola",
       },
+      {
+        movieId: 4,
+        title: "Tenet",
+        genre: "Sci-Fi",
+        director: "Christopher Nolan",
+      },
     ];
 
     getAllMovies.mockReturnValue(mockedMovies);
@@ -77,6 +83,12 @@ describe("API Endpoint tests", () => {
           title: "The Godfather",
           genre: "Crime",
           director: "Francis Ford Coppola",
+        },
+        {
+          movieId: 4,
+          title: "Tenet",
+          genre: "Sci-Fi",
+          director: "Christopher Nolan",
         },
       ],
     });
