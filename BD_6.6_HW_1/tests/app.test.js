@@ -56,7 +56,7 @@ describe("Controller Function Tests", () => {
 
     let result = getAllMovies();
     expect(result).toEqual(mockedMovies);
-    expect(result.length).toBe(3);
+    expect(result.length).toBe(4);
   });
 });
 
@@ -92,7 +92,7 @@ describe("API Endpoint tests", () => {
         },
       ],
     });
-    expect(response.body.movies.length).toBe(3);
+    expect(response.body.movies.length).toBe(4);
   });
 
   it("GET /movies/details/:id should get an movie by ID", async () => {
