@@ -44,13 +44,19 @@ describe("Controller Function Tests", () => {
         genre: "RPG",
         platform: "PC",
       },
+      {
+        gameId: 4,
+        title: "The Last Of Us",
+        genre: "Adventure",
+        platform: "PlayStation 4",
+      },
     ];
 
     getAllGames.mockReturnValue(mockedGames);
 
     let result = getAllGames();
     expect(result).toEqual(mockedGames);
-    expect(result.length).toBe(3);
+    expect(result.length).toBe(4);
   });
 });
 
@@ -78,9 +84,15 @@ describe("API Endpoint tests", () => {
           genre: "RPG",
           platform: "PC",
         },
+        {
+          gameId: 4,
+          title: "The Last Of Us",
+          genre: "Adventure",
+          platform: "PlayStation 4",
+        },
       ],
     });
-    expect(response.body.games.length).toBe(3);
+    expect(response.body.games.length).toBe(4);
   });
 
   it("GET /games/details/:id should get a game by id", async () => {

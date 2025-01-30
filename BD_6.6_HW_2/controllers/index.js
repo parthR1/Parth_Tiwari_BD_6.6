@@ -17,6 +17,12 @@ let games = [
     genre: "RPG",
     platform: "PC",
   },
+  {
+    gameId: 4,
+    title: "The Last Of Us",
+    genre: "Adventure",
+    platform: "PlayStation 4",
+  },
 ];
 
 function getAllGames() {
